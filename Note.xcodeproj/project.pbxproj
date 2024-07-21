@@ -13,6 +13,7 @@
 		D98E0EBE2C4A5A0200C04F36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98E0EBD2C4A5A0200C04F36 /* Preview Assets.xcassets */; };
 		D98E0EC72C4A5A2B00C04F36 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E0EC62C4A5A2B00C04F36 /* Note.swift */; };
 		D98E0EC92C4A5A8400C04F36 /* NoteCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E0EC82C4A5A8400C04F36 /* NoteCategory.swift */; };
+		D9DAEA912C4BC86200C6BA2E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DAEA902C4BC86200C6BA2E /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D98E0EBF2C4A5A0200C04F36 /* Note.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Note.entitlements; sourceTree = "<group>"; };
 		D98E0EC62C4A5A2B00C04F36 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		D98E0EC82C4A5A8400C04F36 /* NoteCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCategory.swift; sourceTree = "<group>"; };
+		D9DAEA902C4BC86200C6BA2E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		D98E0EB52C4A5A0000C04F36 /* Note */ = {
 			isa = PBXGroup;
 			children = (
+				D9DAEA8F2C4BC85800C6BA2E /* View */,
 				D98E0EC52C4A5A2200C04F36 /* Model */,
 				D98E0EB62C4A5A0000C04F36 /* NoteApp.swift */,
 				D98E0EB82C4A5A0000C04F36 /* ContentView.swift */,
@@ -81,6 +84,14 @@
 				D98E0EC82C4A5A8400C04F36 /* NoteCategory.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D9DAEA8F2C4BC85800C6BA2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9DAEA902C4BC86200C6BA2E /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +166,7 @@
 			files = (
 				D98E0EB92C4A5A0000C04F36 /* ContentView.swift in Sources */,
 				D98E0EC92C4A5A8400C04F36 /* NoteCategory.swift in Sources */,
+				D9DAEA912C4BC86200C6BA2E /* Home.swift in Sources */,
 				D98E0EB72C4A5A0000C04F36 /* NoteApp.swift in Sources */,
 				D98E0EC72C4A5A2B00C04F36 /* Note.swift in Sources */,
 			);
