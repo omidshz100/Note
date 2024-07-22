@@ -10,7 +10,7 @@ import SwiftData
 
 struct Home: View {
     // List Selection ( going to use this as a Tab to Filter the selected category
-    @State private var selectedTag:String?
+    @State private var selectedTag:String? = "All Notes"
     // Quering all Categories
     @Query(animation: .snappy) private var categories:[NoteCategory]
     @Environment(\.modelContext) private var context
@@ -67,7 +67,8 @@ struct Home: View {
                 }
             }
         }detail: {
-            
+            // notes View with Dynamic Filtering based on the category
+            NoteView(category: selectedTag, allCategories: categories)
         }
         .navigationTitle(selectedTag ?? "Notes")
         // Add category alert
@@ -127,6 +128,8 @@ struct Home: View {
                 HStack(spacing: 10){
                     Button("", systemImage:"plus"){
                         // adding new notes
+                        let note = Note(content: "")
+                        context.insert(note)
                     }
                     
                     Button("", systemImage: isDark ? "sun.min":"moon"){
@@ -134,6 +137,7 @@ struct Home: View {
                         
                         isDark.toggle()
                     }
+                    .contentTransition(.symbolEffect(.replace))
                 }
             }
         }
